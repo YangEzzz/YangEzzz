@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>try</title>
+    <link href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+<body>
+<div class="whole">
+    <div class="page-header">
+            <h1>I'm xxx</h1>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-leftitem">
+            <div style="height: 10px;background: white"></div>
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active"><a href="#">一</a></li>
+                <li role="presentation"><a href="#">二</a></li>
+                <li role="presentation"><a href="#">三</a></li>
+            </ul>
+        </div>
+        <div class="flex-item">
+
+        </div>
+        <div class="flex-rightitem">
+
+        </div>
+    </div>
+</div>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+<style>
+.page-header {
+    margin: 10px 10px 5px;
+    height: 100px;
+    background: burlywood;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.flex-leftitem {
+    position: sticky;
+    top: 0;
+    margin-left: 20px;
+    width: 15%;
+    height: 500px;
+    align-items: flex-start;
+    background: aqua;
+    border-radius: 10px;
+}
+.flex-item {
+    margin-top: 10px;
+    width: 800px;
+    background: dimgray;
+}
+.flex-rightitem {
+    width: 100px;
+    margin-right: 10px;
+    background: chartreuse;
+    margin-top: 10px;
+}
+body {
+    /*background: url("75cf54b808438c7226c5e71e22f0d7d9495d112c.jpg");
+
+    background-size: cover;*/
+}
+/*滑动条样式*/
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width : 10px;  /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background   : #535353;
+}
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background   : #ededed;
+}
+</style>
+</html>
