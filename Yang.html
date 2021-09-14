@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/4d24b27a06.js" crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity=" " crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity=" " crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css" type="text/css">
 </head>
 <body>
-
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;font-size: 25px">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Yang.html">个人介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="功能开发中，敬请期待！">
+                            <a class="nav-link disabled" href="YangEzzz.html" aria-disabled="false">博客</a></span>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<div class="business-card">
+    <div class="font">
+        <h2>YangEzzz</h2>
+        <span>web designer</span>
+        <ul class="contact-info">
+            <li>
+                <i class="fas fa-mobile-alt"></i>17841678025
+            </li>
+            <li>
+               <i class="far fa-envelope"></i>yez0807@163.com
+            </li>
+            <li>
+                <i class="fas fa-map-marker-alt"></i> 广州
+            </li>
+        </ul>
+    </div>
+    <div class="black">
+        <button type="button" class="btn btn-primary">按钮</button>
+    </div>
+</div>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
 </body>
 </html>
