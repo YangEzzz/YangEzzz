@@ -7,9 +7,23 @@
 }
 /*背景图片与填充方法*/
 body {
+    padding: 0;
+    font-family: "montserrat", serif;
+    background-image: linear-gradient(125deg,#E4FFCD, #6dfad4, #21d9f5, #21d9f5,#6dfad4,#E4FFCD);
+    background-size: 600%;
+    animation: bganimation linear 8s infinite;
+}
 
-    /*background: url("75cf54b808438c7226c5e71e22f0d7d9495d112c.jpg");*/
-    /*background-size: cover;*/
+@keyframes bganimation {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 /*卡片下的垫子*/
 .business-card {
@@ -107,10 +121,20 @@ body {
 
 .business-card:hover .font {
     box-shadow: none;
-    transform: perspective(600px) rotateX(180deg);
+    transform: perspective(500px) rotateX(180deg);
 }
 
 .business-card:hover .black {
     box-shadow: none;
-    transform: perspective(600px) rotateX(0deg);
+    transform: perspective(500px) rotateX(0deg);
+}
+
+.contact-info-back {
+    margin: 0;
+
+
+}
+
+a {
+    text-decoration:none
 }
